@@ -1,0 +1,48 @@
+---
+whiskers:
+  version: "2.4.0"
+  matrix:
+    - flavor
+  filename: "themes/catppuccin-{{ flavor.identifier }}.theme"
+---
+Description="Catppuccin {{ flavor.name }}"
+
+Categories = {"{{ if(cond=flavor.dark, t="dark", f="light") }}"}
+
+Default        = { Colour="#{{ text.hex }}" }
+Canvas         = { Colour="#{{ base.hex }}" }
+Number         = { Colour="#{{ peach.hex }}" }
+Escape         = { Colour="#{{ pink.hex }}" }
+String         = { Colour="#{{ green.hex }}" }
+StringPreProc  = { Colour="#ff0000" }
+BlockComment   = { Colour="#{{ overlay0.hex }}" }
+LineComment    = { Colour="#{{ overlay0.hex }}" }
+PreProcessor   = { Colour="#{{ yellow.hex }}" }
+LineNum        = { Colour="#{{ subtext1.hex }}" }
+Operator       = { Colour="#{{ overlay2.hex }}" }
+Interpolation  = { Colour="#{{ text.hex }}" }
+
+Keywords = {
+  { Colour= "#{{ mauve.hex }}" },
+  { Colour= "#{{ blue.hex }}" },
+  { Colour= "#{{ blue.hex }}" },
+  { Colour= "#{{ blue.hex }}" },
+  { Colour="#ff0000" },
+  { Colour="#{{ pink.hex }}" },
+}
+
+SemanticTokenTypes = {
+  { Type = 'type', Style = Keywords[2] },
+  { Type = 'class', Style =  Keywords[1] },
+  { Type = 'struct', Style =  Keywords[4] },
+  { Type = 'interface', Style = Keywords[1] },
+  { Type = 'parameter', Style = Keywords[6] },
+  { Type = 'variable', Style = Default },
+  { Type = 'enumMember', Style = Keywords[5] },
+  { Type = 'function', Style = Keywords[4] },
+  { Type = 'method', Style = Keywords[4] },
+  { Type = 'keyword', Style =  Keywords[1]},
+  { Type = 'number', Style = Number },
+  { Type = 'regexp', Style = Keywords[6] },
+  { Type = 'operator', Style = Operator },
+}

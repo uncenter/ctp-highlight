@@ -1,0 +1,41 @@
+Description="Catppuccin Latte"
+
+Categories = {"light"}
+
+Default        = { Colour="#4c4f69" }
+Canvas         = { Colour="#eff1f5" }
+Number         = { Colour="#fe640b" }
+Escape         = { Colour="#ea76cb" }
+String         = { Colour="#40a02b" }
+StringPreProc  = { Colour="#ff0000" }
+BlockComment   = { Colour="#9ca0b0" }
+LineComment    = { Colour="#9ca0b0" }
+PreProcessor   = { Colour="#df8e1d" }
+LineNum        = { Colour="#5c5f77" }
+Operator       = { Colour="#7c7f93" }
+Interpolation  = { Colour="#4c4f69" }
+
+Keywords = {
+  { Colour= "#8839ef" },
+  { Colour= "#1e66f5" },
+  { Colour= "#1e66f5" },
+  { Colour= "#1e66f5" },
+  { Colour="#ff0000" },
+  { Colour="#ea76cb" },
+}
+
+SemanticTokenTypes = {
+  { Type = 'type', Style = Keywords[2] },
+  { Type = 'class', Style =  Keywords[1] },
+  { Type = 'struct', Style =  Keywords[4] },
+  { Type = 'interface', Style = Keywords[1] },
+  { Type = 'parameter', Style = Keywords[6] },
+  { Type = 'variable', Style = Default },
+  { Type = 'enumMember', Style = Keywords[5] },
+  { Type = 'function', Style = Keywords[4] },
+  { Type = 'method', Style = Keywords[4] },
+  { Type = 'keyword', Style =  Keywords[1]},
+  { Type = 'number', Style = Number },
+  { Type = 'regexp', Style = Keywords[6] },
+  { Type = 'operator', Style = Operator },
+}

@@ -1,0 +1,41 @@
+Description="Catppuccin Frappé"
+
+Categories = {"dark"}
+
+Default        = { Colour="#c6d0f5" }
+Canvas         = { Colour="#303446" }
+Number         = { Colour="#ef9f76" }
+Escape         = { Colour="#f4b8e4" }
+String         = { Colour="#a6d189" }
+StringPreProc  = { Colour="#ff0000" }
+BlockComment   = { Colour="#737994" }
+LineComment    = { Colour="#737994" }
+PreProcessor   = { Colour="#e5c890" }
+LineNum        = { Colour="#b5bfe2" }
+Operator       = { Colour="#949cbb" }
+Interpolation  = { Colour="#c6d0f5" }
+
+Keywords = {
+  { Colour= "#ca9ee6" },
+  { Colour= "#8caaee" },
+  { Colour= "#8caaee" },
+  { Colour= "#8caaee" },
+  { Colour="#ff0000" },
+  { Colour="#f4b8e4" },
+}
+
+SemanticTokenTypes = {
+  { Type = 'type', Style = Keywords[2] },
+  { Type = 'class', Style =  Keywords[1] },
+  { Type = 'struct', Style =  Keywords[4] },
+  { Type = 'interface', Style = Keywords[1] },
+  { Type = 'parameter', Style = Keywords[6] },
+  { Type = 'variable', Style = Default },
+  { Type = 'enumMember', Style = Keywords[5] },
+  { Type = 'function', Style = Keywords[4] },
+  { Type = 'method', Style = Keywords[4] },
+  { Type = 'keyword', Style =  Keywords[1]},
+  { Type = 'number', Style = Number },
+  { Type = 'regexp', Style = Keywords[6] },
+  { Type = 'operator', Style = Operator },
+}
