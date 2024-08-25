@@ -1,7 +1,7 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="http://andre-simon.de/doku/highlight/en/highlight.php">Highlight</a>
+	Catppuccin for <a href="http://andre-simon.de/doku/highlight/en/highlight.php">Highlight</a> and <a href="https://github.com/sbarex/SourceCodeSyntaxHighlight">SourceCodeSyntaxHighlight</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
@@ -36,19 +36,22 @@
 
 ## Usage
 
-1. Download the flavor of your choice.
-2. Open the app and go to **Preferences** > **Appearance** > **Import theme**.
-3. Select the downloaded flavor file.
+<h3><a href="https://github.com/sbarex/SourceCodeSyntaxHighlight">SourceCodeSyntaxHighlight</a>&nbsp;<img align="center" src="https://github.com/sbarex/SourceCodeSyntaxHighlight/raw/master/assets/icon.png" height="40" /></h3>
 
-<!-- The FAQ section is optional. Remove if needed.-->
+1. Download your preferred flavor(s) from [`themes/`](./themes/).
+2. Open Syntax Highlight and go to the **Colors** tab.
+3. Click the **+** in the bottom left of the window, and select **Import...**.
+4. Locate the downloaded flavor file (themes must be imported one at a time, repeat steps 3-4 if necessary).
+5. Configure your themes in the **General** tab as desired.
+
 ## 🙋 FAQ
 
-- Q: **_"How can I do X?"_**\
-  A: ...
+- Q: **_"Help! The themes don't display correctly!"_**\
+  A: This is a known issue with the RTF rendering engine. Switch the **Render engine** option in the **General** tab to "HTML". See [sbarex/SourceCodeSyntaxHighlight (#202)](https://github.com/sbarex/SourceCodeSyntaxHighlight/issues/202) for more context and/or solutions.
 
 ## 💝 Thanks to
 
-- [Human](https://github.com/catppuccin)
+- [uncenter](https://github.com/uncenter)
 
 &nbsp;
 
